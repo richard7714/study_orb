@@ -1,7 +1,7 @@
 //
 // Created by ma on 23. 1. 8.
 //
-//#define SCOPE
+#define SCOPE
 #ifndef SCOPE
 #include <mutex>
 #include <iostream>
@@ -12,10 +12,12 @@ int main(){
     {
         int* tt = new int;
         *tt = 12;
-        b = tt;
+//        b = tt;
 //        delete tt;
     }
-    std::cout<<*b<<std::endl;
+    int* c;
+
+//    std::cout<<*b<<std::endl;
 }
 
 #endif
